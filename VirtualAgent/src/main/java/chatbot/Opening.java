@@ -1,21 +1,18 @@
 package chatbot;
-
+import java.awt.BorderLayout;
 import java.awt.EventQueue;
-import java.awt.Font;
 import java.awt.Frame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.JButton;
+import javax.swing.ImageIcon;
+import java.awt.Font;
 
-//import org.springframework.stereotype.Component;
-
-//@Component
 public class Opening extends JFrame {
 
 	private JPanel contentPane;
@@ -23,7 +20,7 @@ public class Opening extends JFrame {
 	/**
 	 * Launch the application.
 	 */
-	public void start() {
+	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {

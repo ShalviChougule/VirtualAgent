@@ -1,19 +1,21 @@
 package chatbot;
 
-import java.awt.Color;
+import java.awt.BorderLayout;
 import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JTextArea;
+import javax.swing.JScrollPane;
+import javax.swing.JLabel;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Random;
 
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
 import javax.swing.JTextField;
-import javax.swing.border.EmptyBorder;
+import java.awt.Color;
+import java.util.Random;
 
 public class ChatBot extends JFrame {
 
@@ -75,7 +77,7 @@ public class ChatBot extends JFrame {
 
 
 		else if(gtext.contains("software request")) {
-		           bot("Which software would you like to install on your device? \n1. Amazon workspaces ï¿½ 2.5.10 \n2. Chrome standalone setup 64\n3. Citrix Receiver ï¿½ 3.2.0.1");
+		           bot("Which software would you like to install on your device? \n1. Amazon workspaces – 2.5.10 \n2. Chrome standalone setup 64\n3. Citrix Receiver – 3.2.0.1");
 		           }
 		else if (gtext.contains("amazon workspaces")) {
 		bot("Enter the device number you want to install this software on:");
